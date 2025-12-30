@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int r, c;
+    scanf("%d", &r); 
+    scanf("%d", &c); 
+    int arr[r][c];
+    for (int i = 0; i < r; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    int specific_col;
+    scanf("%d",&specific_col);
+    for (int i = 0; i < r; i++)
+    {
+        printf("%d ", arr[i][specific_col] );
+        printf("\n");
+    }
+
+    return 0;
+}
